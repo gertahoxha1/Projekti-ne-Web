@@ -64,6 +64,7 @@ a{
 h1{
     font-family: Prata;
     margin-right: 2%;
+    margin-top: 5%;
     
 }
 
@@ -101,7 +102,7 @@ h2{
     float: right;
     position: absolute;
     top: 95%;
-    right: 60%;
+    right: 65%;
     padding-top: 10px;
 }
 
@@ -118,7 +119,7 @@ h3{
     font-family: Prata;
     align-items: center;
     margin-right: 30px;
-    margin-left: 700px;
+    margin-left: 600px;
     padding-top: 60px;
 }
 
@@ -126,7 +127,7 @@ h3{
     font-family: Prata;
     align-items: center;
     margin-right: 30px;
-    margin-left: 700px;
+    margin-left: 600px;
     padding-top: 120px;
 }
 
@@ -136,6 +137,42 @@ h3{
     float: right;
     position: absolute;
     top: 160%;
-    right: 60%;
+    right: 65%;
     padding-top: 10px;
 }
+
+@media screen and (max-width:900px) {
+    label{
+      display: inline-block;
+      margin-left: 60%;
+      font-size: 25px;
+      cursor: pointer;
+  }
+
+  .quota{
+    font-size: 30px;
+  }
+  .ribbon{
+    width: 300px;
+  }
+
+  .lista{
+    display: none;
+    text-align: center;
+    height: 300px;
+    margin-top: 355px;
+    margin-left: 108px;
+    background-color: #849EFD;
+    width: 200px;
+    padding-top: 40px;
+}
+.lista li{
+    margin: 20px;
+}
+
+h1, p{
+    font-size: 20px;
+}
+
+}
+
