@@ -46,7 +46,7 @@ label{
     justify-content: flex-end; 
     gap: 100px;
     font-weight: 500;  
-    position:fixed; 
+    position:absolute; 
     left: 46%;
     margin-top: 20px;
     /* overflow: hidden; */
@@ -63,11 +63,79 @@ a{
 
 h1{
     font-family: Prata;
-    margin-left: 2%;
-
+    margin-right: 2%;
+    
 }
 
-p{
-    margin-left: 2%;
-    margin-right: 2%;
+.pjesa-1{
+    font-family: Prata;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 700px;
+    
+   
+}
+
+.firstPiece{
+    width: 25%;
+    display: flex;
+    float: right;
+    position: absolute;
+    top: 15%;
+    left: 65%; 
+    padding-top: 5px;
+}
+
+h2{
+   font-family: Prata;
+   padding-top: 10px;
+   margin-left: 1060px;
+}
+
+
+
+
+.ourFirstBuilding{
+    width: 30%;
+    display: flex;
+    float: right;
+    position: absolute;
+    top: 95%;
+    right: 60%;
+    padding-top: 10px;
+}
+
+h3{
+    font-family: Prata;
+    padding-top: 10px;
+    margin-left: 250px;
+    padding-bottom: 100px;
+}
+
+
+
+.pjesa-2{
+    font-family: Prata;
+    align-items: center;
+    margin-right: 30px;
+    margin-left: 700px;
+    padding-top: 60px;
+}
+
+.pjesa-3{
+    font-family: Prata;
+    align-items: center;
+    margin-right: 30px;
+    margin-left: 700px;
+    padding-top: 120px;
+}
+
+.ourBuildingNow{
+    width: 30%;
+    display: flex;
+    float: right;
+    position: absolute;
+    top: 160%;
+    right: 60%;
+    padding-top: 10px;
 }

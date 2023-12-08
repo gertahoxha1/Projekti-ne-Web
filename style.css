@@ -46,7 +46,7 @@ label{
     justify-content: flex-end; 
     gap: 100px;
     font-weight: 500;  
-    position:fixed; 
+    position:absolute; 
     left: 46%;
     margin-top: 20px;
     /* overflow: hidden; */
@@ -75,7 +75,7 @@ a{
     width: 40%;
     display: flex;
     float: right;
-    position: fixed;
+    position: absolute;
     top: 9%;
     left: 60%;
 }
