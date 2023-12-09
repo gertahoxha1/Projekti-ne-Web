@@ -1,6 +1,7 @@
 *{
   font-family: 'Poppins', sans-serif;
   
+  
 }
 
 body{
@@ -53,7 +54,7 @@ label{
   position:absolute; 
   left: 46%;
   margin-top: 20px;
-  /* overflow: hidden; */
+
  
 }
 
@@ -215,42 +216,43 @@ h1{
 
 
 .f{
-    background-color: #FED7D7 ;
-    width: 100%;
-    margin-top:  2%;
+ background-color: #FED7D7 ;
+ width: 100vw;
+ 
 }
 
 .fotoja{
-    width: 60px;
-    display: flex;
-    position: relative;
-    left: 45%;
-    margin-top: 5%;
-  
- 
-
+ width: 50px;
+ display: flex;
+ position: relative;
+ left: 47%;
+ margin-top: 10%;
+ padding-top: 1%;
 }
 
 .emrilogos{
-    width: 10%;
-    position: relative;
-    left: 44%;
-    color: white;
-    font-family: Poppins;
-    font-size: larger;
+ width: 11%;
+ position: relative;
+ left: 45%;
+ color: white;
+ font-family: Poppins;
+ font-size: larger;
+ font-weight: bold;
+ margin: 0;
 }
   
 #copy{
-    color: #404040;
+    color: #6e6b6b;
     position: relative;
-    left: 37%;
-    font-size: smaller;
+    left: 38%;
+    font-size: 12px;
+    margin: 0;
 }
 
 .ff, .linka{
    width: 15%;
     position: relative;
-    left: 38%;
+    left: 39%;
     
 }
 
@@ -438,7 +440,7 @@ h1{
  } 
  
 
-  @media screen and (max-width:900px) {
+  @media screen and (max-width:768px) {
     label{
       display: inline-block;
       margin-left: 60%;
@@ -454,12 +456,11 @@ h1{
   }
 
   .lista{
-    display: none;
+   display: flex;
     text-align: center;
     height: 300px;
     margin-top: 355px;
     margin-left: 108px;
-    background-color: #849EFD;
     width: 200px;
     padding-top: 40px;
 }
@@ -495,6 +496,7 @@ h1, .rev{
 .disc{
   width: 100%;
 }
+
   }
 
   .discover{
@@ -518,7 +520,7 @@ h1, .rev{
     border-radius: 4px;
     background-color: white;
     border: none;
-    color: white;
+    color: black;
     text-align: center;
     margin-top: 32%;
     height: 50px;
@@ -554,3 +556,6 @@ h1, .rev{
     right: 0;
   }
 
+span{
+  color: rgb(227, 21, 100);
+}
