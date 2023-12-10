@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="register.css">
-    <script src="register.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,7 +49,7 @@
                 <div class="error"></div>
             </div>
             <div class="inputctrl">
-                <label for="password">Password again</label>
+                <label for="password2">Password again</label>
                 <input id="password2" name="password2" type="password">
                 <div class="error"></div>
             </div>
@@ -60,6 +59,100 @@
         </form>
         
     </div>
+
+    <footer>
+        <div class="f">
+          <img src="fotot/swan.png" alt="" class="fotoja">
+          <p class="emrilogos">White Swan</p>
+    
+        <p id="copy">Copyright 2023 White Swan Company. All rights reserved.</p>
+        
+        <div class="ff">
+          <a href=""><img class="linka" src="fotot/insta-removebg-preview.png" alt=""></a>
+          <a href=""><img class="linka" src="fotot/pinterest-removebg-preview.png" alt=""></a>
+          <a href=""><img class="linka" src="fotot/facebook-removebg-preview.png" alt=""></a>
+      </div>
+        
+    
+        
+      </div>
+      
+      
+    </footer>
+
+    <script>
+const form = document.getElementById('form');
+const usernameInput = document.getElementById('username');
+const emailInput = document.getElementById('email');
+const passwordInput= document.getElementById('password');
+const password2Input = document.getElementById('password2');
+
+
+
+form.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    validateInputs();
+});
+
+const setError = (element, message) => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = message;
+    inputControl.classList.add('error');
+    inputControl.classList.remove('success');
+};
+
+const setSuccess = (element) => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = '';
+    inputControl.classList.add('success');
+    inputControl.classList.remove('error');
+};
+
+const isValidEmail = (email) => {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+};
+
+const validateInputs = () => {
+    const usernameValue = usernameInput.value.trim();
+    const emailValue = emailInput.value.trim();
+    const passwordValue = passwordInput.value.trim();
+    const password2Value = password2Input.value.trim();
+
+
+    if (usernameValue === '') {
+        setError(usernameInput, 'Username is required');
+    } else {
+        setSuccess(usernameInput);
+    }
+
+    if (emailValue === '') {
+        setError(emailInput, 'Email is required');
+    } else if (!isValidEmail(emailValue)) {
+        setError(emailInput, 'Provide a valid email address');
+    } else {
+        setSuccess(emailInput);
+    }
+
+    if (passwordValue === '') {
+        setError(passwordInput, 'Password is required');
+    } else {
+        setSuccess(passwordInput);
+    }
+
+    if (password2Value === '') {
+        setError(passwor2dInput, 'Write password again');
+    } else {
+        setSuccess(password2Input);
+    }
+};
+
+    </script>
 
 
 </body>

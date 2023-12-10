@@ -61,30 +61,35 @@ a{
     
 }
 
+
 #form{
     width: 400px;
     height: 400px;
     margin: 20vh auto 0 auto;
     padding: 20px;
     background-color:#FED7D7;
-    border-radius: 5%;
-    font-size:15px ;
+    border-radius: 10%;
+    font-size:15px;
 }
 
 #form h1 {
     color: black;
     text-align: center;
+    font-size: 35px;
+    margin: 0;
+    padding-bottom: 20px;
 }
+
 #form button{
     padding: 10px;
     font-size: 15px;
-    width: 50%;
+    width: 40%;
     color: white;
     background-color:#FFEFEF;
     color: black;
     border: none;
     border-radius: 5%;
-    margin: 0  0  0 25% ; 
+    margin: 0  0  0 30% ; 
     cursor: pointer;
   
     
@@ -115,10 +120,53 @@ a{
 
 .inputctrl.error input {
     border-color: red;
+
 }
 
 .inputctrl .error{
     color: red;
-    font-size:5px;
+    font-size:8px;
     height: 13px;
+    
 }
+
+.f{
+    background-color: #FED7D7 ;
+    width: 100vw;
+    
+   }
+   
+   .fotoja{
+    width: 50px;
+    display: flex;
+    position: relative;
+    left: 47%;
+    margin-top: 10%;
+    padding-top: 1%;
+   }
+   
+   .emrilogos{
+    width: 11%;
+    position: relative;
+    left: 45%;
+    color: white;
+    font-family: Poppins;
+    font-size: larger;
+    font-weight: bold;
+    margin: 0;
+   }
+     
+   #copy{
+       color: #6e6b6b;
+       position: relative;
+       left: 38%;
+       font-size: 12px;
+       margin: 0;
+   }
+   
+   .ff, .linka{
+      width: 15%;
+       position: relative;
+       left: 39%;
+       
+   }
