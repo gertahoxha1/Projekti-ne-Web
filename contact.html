@@ -29,6 +29,124 @@
                 <li> <a href="login.html">Log in</a></li>
             </ul>
         </div>
+
+
+        <div class="container">
+
+            <img src="fotot/scr.png" alt="" class="foto">
+    
+            <form id="form">
+                <h1>Contact Us</h1>
+                <p>Hello! If you need help with anything, you can message us here:</p>
+                <div class="input-control">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                    <div class="error"></div>
+                </div>
+    
+                <div class="input-control">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    <div class="error"></div>
+                </div>
+    
+                <div class="input-control">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <div class="error"></div>
+                </div>
+    
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        
+    
+    
+        <script>
+            const form = document.getElementById('form');
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const messageInput = document.getElementById('message');
+    
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+    
+        validateInputs();
+    });
+    
+    const setError = (element, message) => {
+        const inputControl = element.parentElement;
+        const errorDisplay = inputControl.querySelector('.error');
+    
+        errorDisplay.innerText = message;
+        inputControl.classList.add('error');
+        inputControl.classList.remove('success');
+    };
+    
+    const setSuccess = (element) => {
+        const inputControl = element.parentElement;
+        const errorDisplay = inputControl.querySelector('.error');
+    
+        errorDisplay.innerText = '';
+        inputControl.classList.add('success');
+        inputControl.classList.remove('error');
+    };
+    
+    const isValidEmail = (email) => {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    };
+    
+    const validateInputs = () => {
+        const nameValue = nameInput.value.trim();
+        const emailValue = emailInput.value.trim();
+        const messageValue = messageInput.value.trim();
+    
+        if (nameValue === '') {
+            setError(nameInput, 'Name is required');
+        } else {
+            setSuccess(nameInput);
+        }
+    
+        if (emailValue === '') {
+            setError(emailInput, 'Email is required');
+        } else if (!isValidEmail(emailValue)) {
+            setError(emailInput, 'Provide a valid email address');
+        } else {
+            setSuccess(emailInput);
+        }
+    
+        if (messageValue === '') {
+            setError(messageInput, 'Message is required');
+        } else {
+            setSuccess(messageInput);
+        }
+    };
+    
+        </script>
+
+
+<footer>
+    <div class="f">
+      <img src="fotot/swan.png" alt="" class="fotoja">
+      <p class="emrilogos">White Swan</p>
+
+    <p id="copy">Copyright 2023 White Swan Company. All rights reserved.</p>
+    
+    <div class="ff">
+      <a href=""><img class="linka" src="fotot/insta-removebg-preview.png" alt=""></a>
+      <a href=""><img class="linka" src="fotot/pinterest-removebg-preview.png" alt=""></a>
+      <a href=""><img class="linka" src="fotot/facebook-removebg-preview.png" alt=""></a>
+  </div>
+    
+
+    
+  </div>
+  
+  
+</footer>
+
+    
     
 </body>
 </html>

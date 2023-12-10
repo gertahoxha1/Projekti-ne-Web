@@ -176,3 +176,44 @@ h1, p{
 
 }
 
+.f{
+    background-color: #FED7D7 ;
+    width: 100vw;
+    
+   }
+   
+   .fotoja{
+    width: 50px;
+    display: flex;
+    position: relative;
+    left: 47%;
+    margin-top: 10%;
+    padding-top: 1%;
+   }
+   
+   .emrilogos{
+    width: 11%;
+    position: relative;
+    left: 45%;
+    color: white;
+    font-family: Poppins;
+    font-size: larger;
+    font-weight: bold;
+    margin: 0;
+   }
+     
+   #copy{
+       color: #6e6b6b;
+       position: relative;
+       left: 38%;
+       font-size: 12px;
+       margin: 0;
+   }
+   
+   .ff, .linka{
+      width: 15%;
+       position: relative;
+       left: 39%;
+       
+   }
+

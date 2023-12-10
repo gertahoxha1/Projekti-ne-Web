@@ -60,3 +60,120 @@ a{
     overflow: hidden;
     
 }
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 20px;
+    padding-top: 60px;
+    
+}
+
+#form {
+    width: 450px;
+    padding: 20px;
+    background-color: #FED7D7;
+    border-radius: 4px;
+    font-size: 20px;
+    margin-right: 25%;
+    
+    
+}
+
+#form h1 {
+    color: #0f2027;
+    text-align: center;
+    
+}
+
+#form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    background-color: rgb(235, 87, 166);
+    border: none;
+    border-radius: 4px;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input {
+    border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	width: 93%;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+
+.foto {
+    max-width: 100%; /* Adjust this width as needed */
+    margin-left: 20%;
+    margin-right: 60px;
+}
+
+.f{
+    background-color: #FED7D7 ;
+    width: 100vw;
+    
+   }
+   
+   .fotoja{
+    width: 50px;
+    display: flex;
+    position: relative;
+    left: 47%;
+    margin-top: 10%;
+    padding-top: 1%;
+   }
+   
+   .emrilogos{
+    width: 11%;
+    position: relative;
+    left: 45%;
+    color: white;
+    font-family: Poppins;
+    font-size: larger;
+    font-weight: bold;
+    margin: 0;
+   }
+     
+   #copy{
+       color: #6e6b6b;
+       position: relative;
+       left: 38%;
+       font-size: 12px;
+       margin: 0;
+   }
+   
+   .ff, .linka{
+      width: 15%;
+       position: relative;
+       left: 39%;
+       
+   }
